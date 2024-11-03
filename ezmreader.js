@@ -1,17 +1,14 @@
 /*
 
-    HTML5 Reader for Electric Zine Maker, made by Jeremy Oduber & contributors 2019-2021    
-    v21.5
-    Me:
-        https://twitter.com/JeremyOduber
-    This:
+    HTML5 Reader for Electric Zine Maker Music editions, orginal reader by Jeremy Oduber & contributors 2019-2021, Music edition by Klaus von Grafenstein 2024.
+    Original :
         https://jeremyoduber.itch.io/js-zine
     Electric Zine Maker: 
         https://alienmelon.itch.io/electric-zine-maker
-    GitHub:
+    Electric Zine Maker Reader code:
         https://github.com/jeremyoduber/EZM-Reader
     Licensed under the MIT License:
-        https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE
+        https://github.com/KlausVG/EZM-Reader-music-edition/blob/main/LICENSE
     
 */
 
@@ -45,6 +42,10 @@ const TEMPLATE = 1; // Change this value to set the template
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
 const SMOOTH = true; // Set to false if you want crispy pixels. Leave true if you like the blur.
+const MUSIC = 'music.mp3'; // Change this to the path of your music file
+const MUTE_SPRITE = 'mute.png'; // Change this to the path of your mute sprite
+const UNMUTE_SPRITE = 'unmute.png'; // Change this to the path of your unmute sprite
+
 
 //---- END USER OPTIONS ----//
 
@@ -55,6 +56,9 @@ let card_amount;
 let current_state = 0;
 let textures = [];
 let pages = [];
+let isMuted = false;
+let music;
+let muteButton;
 
 document.body.style.background = BGCOLOR;
 document.body.ariaLabel = ALT;
@@ -126,6 +130,9 @@ Promise.all(
     )
 )
     .then(imgs => {
+
+
+ 
         LOADING_OVERLAY.remove();
         const list = document.createElement('ul');
         list.ariaHidden = true;
@@ -139,6 +146,43 @@ Promise.all(
             return li;
         });
         document.body.appendChild(list);
+// Create music player
+music = new Audio(MUSIC);
+music.loop = true;
+
+// Check if music file exists
+music.onerror = function() {
+    console.log("Music file not found. Not creating mute button.");
+    return;
+};
+
+// Create mute button only if music file exists
+music.oncanplay = function() {
+    muteButton = document.createElement('button');
+    muteButton.className = 'mute-button';
+    muteButton.style.position = 'absolute';
+    muteButton.style.top = '10px';
+    muteButton.style.right = '10px';
+    muteButton.style.backgroundImage = `url(${MUTE_SPRITE})`;
+    muteButton.style.backgroundSize = 'cover';
+    muteButton.style.width = '30px';
+    muteButton.style.height = '30px';
+    muteButton.style.border = 0;
+    muteButton.style.border = 'none';
+    muteButton.style.cursor = 'pointer';
+    muteButton.onclick = () => {
+        if (isMuted) {
+            music.play();
+            muteButton.style.backgroundImage = `url(${MUTE_SPRITE})`;
+        } else {
+            music.pause();
+            muteButton.style.backgroundImage = `url(${UNMUTE_SPRITE})`;
+        }
+        isMuted = !isMuted;
+    };
+    document.body.appendChild(muteButton);
+};
+
 
         function updatePerspective() {
             const w = window.innerWidth;
@@ -151,8 +195,9 @@ Promise.all(
     })
     .catch(error => {
         console.error(error);
-        LOADING_OVERLAY.textContent = 'Something went wrong! Make sure your images are in the pages folder! See console for details.';
+        LOADING_OVERLAY.textContent = 'Something went wrong Make sure your images are in the pages folder See console for details.';
     });
+
 
 // Keyboard input
 document.addEventListener('keyup', function onKeyUp(key) {
@@ -161,17 +206,46 @@ document.addEventListener('keyup', function onKeyUp(key) {
     } else if (key.key === 'ArrowRight' || key.key === 'd') {
         flipRight();
     }
-});
-
-// Mouse input
-document.addEventListener('pointerup', function onPointerUp(event) {
-    if (event.button !== 0) return;
-    if (event.clientX < window.innerWidth / 2) {
-        flipRight();
-    } else {
-        flipLeft();
+    if (key.key === 'm' || key.key === 'M') {
+          if (isMuted) {
+                music.play();
+                muteButton.style.backgroundImage = `url(${MUTE_SPRITE})`;
+            } else {
+                music.pause();
+                muteButton.style.backgroundImage = `url(${UNMUTE_SPRITE})`;
+            }
+            isMuted = !isMuted;
     }
 });
+
+
+let isFirstClick = true;
+// Mouse input
+document.addEventListener('pointerup', function onPointerUp(event) {
+    
+    if (event.button !== 0) return;
+    if (event.target === muteButton) {
+        return;
+    }
+  
+    if (event.clientX < window.innerWidth / 2) {
+        flipRight(); // Changed from flipRight() to flipLeft()
+    } else {
+        flipLeft(); // Changed from flipLeft() to flipRight()
+    }
+    if (isFirstClick) {
+        // First click, start music and set isFirstClick to false
+        try {
+                music.play();
+
+        } catch (error) {
+            console.error('Error playing music:', error);
+        }
+        isFirstClick = false;
+    }
+});
+
+
 
 function getPages(state) {
     return [pages[state * 2], pages[state * 2 + 1]].filter(i => i);
@@ -181,6 +255,8 @@ function replaceTransformPerPage(state, search, replace) {
         page.style.transform = page.style.transform.replace(search, replace);
     });
 }
+
+
 function setDepth(state, depth) {
     getPages(state).forEach(page => {
         page.className = page.className.replace(/depth-\d+/, 'depth-' + Math.min(depth, 2));
@@ -208,3 +284,15 @@ function flipRight() {
     setDepth(current_state, 1);
     --current_state;
 }
+
+
+muteButton.onmouseover = () => {
+
+  muteButton.style.opacity = '0.7';
+};
+muteButton.onmouseout = () => {
+ 
+  muteButton.style.opacity = '1';
+};
+
+

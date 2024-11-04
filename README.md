@@ -1,6 +1,6 @@
 # HTML5 Reader for Electric Zine Maker
 
-A web and mobile friendly way to show off [Electric Zine Maker](https://alienmelon.itch.io/electric-zine-maker) zines on itch.io.
+A web and mobile friendly way to show off, fork of  [Electric Zine Maker](https://alienmelon.itch.io/electric-zine-maker) zines on itch.io.
 
 See live example [here](https://jeremyoduber.itch.io/js-zine) (it would not include the music aspect).
 
@@ -31,6 +31,9 @@ See live example [here](https://jeremyoduber.itch.io/js-zine) (it would not incl
 ## License
 [MIT](https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE)
 
-## Links
-[project itch.io page](https://jeremyoduber.itch.io/js-zine)  
-[my twitter](https://twitter.com/JeremyOduber)  
+## To do
+[] Add the possibility to a click and a flip page noise
+[] Add the possibility of a noise at a random time
+[] Add the possibility of a custom cursor
+[] click that mark the zine
+

@@ -23,9 +23,9 @@ See live example [here](https://jeremyoduber.itch.io/js-zine) (it would not incl
 - The reader is mobile friendly in either orientation, but for better readability on small screens, set it to Landscape.
 
 ## Special Thanks
-[Nathalie Lawhead](https://twitter.com/alienmelon) for making Electric Zine Maker  
+[Nathalie Lawhead](https://bsky.app/profile/alienmelon.bsky.social) for making Electric Zine Maker  
 [Jeremy Oduber](https://jeremyoduber.com/) for making the original EZM Reader
-[Sean S. LeBlanc](https://twitter.com/SeanSLeBlanc) for code contributions
+[Sean S. LeBlanc](https://bsky.app/profile/jeremyoduber.com) for code contributions
 
 
 ## License

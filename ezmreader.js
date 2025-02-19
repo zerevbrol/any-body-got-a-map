@@ -39,10 +39,11 @@ const TEMPLATE = 1; // Change this value to set the template
     8: 64 pages
         Micro
 */
+const BG_TILE = 'example.gif'; // If an image is preferred over a static color!
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
 const ALT = 'Reader for Electric Zine Maker'; // Change this to a plaintext copy or description of your content to make it visible to screen-readers
 const SMOOTH = true; // Set to false if you want crispy pixels. Leave true if you like the blur.
-const MUSIC = 'music.mp3'; // Change this to the path of your music file
+const MUSIC = 'elnath.mp3'; // Change this to the path of your music file
 const MUTE_SPRITE = 'mute.png'; // Change this to the path of your mute sprite
 const UNMUTE_SPRITE = 'unmute.png'; // Change this to the path of your unmute sprite
 
@@ -60,7 +61,13 @@ let isMuted = false;
 let music;
 let muteButton;
 
-document.body.style.background = BGCOLOR;
+console.log('Setting background to:', BG_TILE); // For error handling
+document.addEventListener('DOMContentLoaded', function() {
+    document.body.style.background = `url(${BG_TILE}) repeat`;
+    document.body.style.backgroundSize = 'auto';
+    document.body.style.backgroundPosition = 'top left';
+});
+
 document.body.ariaLabel = ALT;
 if (SMOOTH) {
     document.body.style.imageRendering = 'auto';
@@ -294,5 +301,3 @@ muteButton.onmouseout = () => {
  
   muteButton.style.opacity = '1';
 };
-
-

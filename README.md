@@ -13,7 +13,8 @@ See live example [here](https://jeremyoduber.itch.io/js-zine) (it would not incl
 - To turn off smoothing and get more pixelated images, set SMOOTH to false.
 - Turn pages with arrow keys or A&D, or click/tap on page edges.
 - If you want to add a background music that will start playing when the first click will be made : copy a mp3 file in the main folder and modify the name of the file MUSIC constant in ezmreader.js. The music can be muted with the key press m or by cliking the mute button.
-- To change the mut button sprites, modify the "unmute" and "mute" png of the main folder. 
+- To change the mut button sprites, modify the "unmute" and "mute" png of the main folder.
+- To change the background .gif and its tiling capabilities change BG_TILE to the directory of your file.
 - If you are hosting your zine directly, you can change the metadata in index.html to have more control of what the preview will look like when your zine is linked to on social media.
 
 

@@ -31,10 +31,3 @@ See live example [here](https://jeremyoduber.itch.io/js-zine) (it would not incl
 
 ## License
 [MIT](https://github.com/jeremyoduber/EZM-Reader/blob/main/LICENSE)
-
-## To do
-- Add the possibility to a click and a flip page noise
--  Add the possibility of a noise at a random time
-- Add the possibility of a custom cursor
-- click that mark the zine
-

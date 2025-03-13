@@ -1,4 +1,4 @@
-# any body got a map?
+# any body got a map? [📍](https://staff.washington.edu/bryantl2)
 
 A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
 

@@ -4,7 +4,7 @@ A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultu
 
 ### setting the scene
 
-<i>any body got a map?</i> explores and questions the role of mapping in exploring "queer" geographies. [Source datasets](4-FullVerifiedDatasets) for this project came from [Mapping the Gay Guides]([url](https://github.com/MappingtheGayGuides)), a project by Drs. Amanda Regan and Eric Gonzaba of Clemson University, in collaboration with California State University, Fullerton and funded by the National Endowment for the Humanities. <i>any body got a map?</i> takes the form of a zine, replicating a tried-and-true medium of homosexual communication, viewable as [an online interactive]([url](https://staff.washington.edu/bryantl2)) (recommended), and as an accessible, static file.
+<i>any body got a map?</i> explores and questions the role of mapping in exploring "queer" geographies. [Source datasets](4-FullVerifiedDatasets) for this project came from [Mapping the Gay Guides](https://github.com/MappingtheGayGuides), a project by Drs. Amanda Regan and Eric Gonzaba of Clemson University, in collaboration with California State University, Fullerton and funded by the National Endowment for the Humanities. <i>any body got a map?</i> takes the form of a zine, replicating a tried-and-true medium of homosexual communication, viewable as [an online interactive](https://staff.washington.edu/bryantl2) (recommended), and as an accessible, static file.
 
 ### rationale
 

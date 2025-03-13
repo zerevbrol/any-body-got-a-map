@@ -1,16 +1,16 @@
 # any body got a map?
 
-A final exploratory project by L.P. Bryant for Ben Lee in LIS598: Computing Cultural Heritage WI25.
+A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
 
-## setting the scene
+### setting the scene
 
 <i>any body got a map?</i> explores queer geographies.
 
-## rationale
+### rationale
 
-## methodology
+### methodology
 
-## thank you & further reading
+### thank you & further reading
 
 A big, delicious thank you to the folks at [Electric Zine Maker](https://alienmelon.itch.io/electric-zine-maker) on itch.io.
 

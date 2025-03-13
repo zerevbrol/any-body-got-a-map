@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('data/data-test.csv')
+df = pd.read_csv('data/data-test.csv', index_col=0)
 
 # Filtering all establishments which have the amenity feature (B), defined as "Blacks frequent" in the Damron Guides
 black_establishments = df[
@@ -30,5 +30,6 @@ lesbian_establishments = df[
 # black_establishments.to_csv('black_establishments_1988.csv', index=False)
 # lesbian_establishments.to_csv('lesbian_establishments_1988.csv', index=False)
 
-
+black_establishments.plot()
+plt.show()
 

@@ -1,8 +1,12 @@
 # any body got a map? [📍](https://staff.washington.edu/bryantl2)
 
+***
+
 A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
 
 <i>any body got a map?</i> takes the form of a zine, replicating a tried-and-true medium of homosexual communication, viewable as [an online interactive](https://staff.washington.edu/bryantl2) (recommended), and as an accessible, static file.
+
+***
 
 ### setting the scene
 
@@ -16,11 +20,15 @@ Eminently successful, by 1988, Damron's publishing company sold more than 100,00
 
 The <i>Address Books</i>, for fear of censorship and self-protection, do not mention any homosexual self-identification, such as "gay," "lesbian," initialisms, or similar. They are used here both to retain the historic character of Damron's intent (being gay himself), and the nature of those identities. Wherever possible, "gay," "lesbian," "bisexual," and "transgender" identities will be indicated as such and in those terms.
 
+***
+
 ### scope & rationale
 
 Given the scope of this project as compared to its source, only the fully "cleaned and verified" datasets published for the 1988 Damron Guides are used here as proof of concept. The 1988 dataset, despite being cleaned and verified, does not have its full dataset represented by the Mapping the Gay Guides project website, however. <i>any body got a map?</i> identifies and leverages this gap between "usable" but not "presentable" data.
 
 The datasets compiled for Mapping the Gay Guides contain geocoded locations suitable for GIS or similar mapping software, in line with the visualization deliverable published by the project. <i>any body got a map?</i> manipulates, permutes, and conforms this data into different visualizations in line with data subsets or slices indicated in methodology below.
+
+***
 
 ### methodology
 
@@ -31,6 +39,8 @@ Data slices and subsequent subsets were externalized then mapped, visualized, or
 All additional data is cited per visualization and includes information from [Queering the Map](https://www.queeringthemap.com/) and United States Bureau of Labor Statistics.
 
 This information was then compiled, processed, and interpreted into zine format using alienmelon's Electric Zine Maker, and hosted at University of Washington servers.
+
+***
 
 ### thank you & further reading
 

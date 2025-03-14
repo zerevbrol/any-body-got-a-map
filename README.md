@@ -1,6 +1,6 @@
 # any body got a map? [📍](https://staff.washington.edu/bryantl2)
 
-A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
+A final, exploratory project by noted homosexual L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
 
 <i>any body got a map?</i> takes the form of a zine, replicating a tried-and-true medium of homosexual communication, viewable as [an online interactive](https://staff.washington.edu/bryantl2) (recommended), and as an accessible, static file.
 
@@ -18,9 +18,11 @@ The <i>Address Books</i>, for fear of censorship and self-protection, do not men
 
 ### scope & rationale
 
-Given the scope of this project as compared to its source, only the fully "cleaned and verified" datasets published for the 1988 Damron Guides are used here as proof of concept.
+Given the scope of this project as compared to its source, only the fully "cleaned and verified" datasets published for the 1988 Damron Guides are used here as proof of concept. The 1988 dataset, despite being cleaned and verified, does not have its full dataset represented by the Mapping the Gay Guides project website, however.
 
 ### methodology
+
+The 1988 dataset was 
 
 ### thank you & further reading
 

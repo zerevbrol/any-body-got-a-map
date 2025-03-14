@@ -13,7 +13,7 @@
 */
 
 //---- USER OPTIONS ----//
-const TEMPLATE = 1; // Change this value to set the template
+const TEMPLATE = 9; // Change this value to set the template
 /*  
     Available templates:
     
@@ -38,6 +38,8 @@ const TEMPLATE = 1; // Change this value to set the template
         Mini-Mini-Booklet
     8: 64 pages
         Micro
+    9: 10 pages
+        Custom 10 Page Zine
 */
 const BG_TILE = 'example.gif'; // If an image is preferred over a static color!
 const BGCOLOR = '#f5f5f5'; // Change this hex value to set the background color. Remember to keep the quotes!
@@ -120,6 +122,10 @@ switch (TEMPLATE) {
     case 8:
         card_amount = 32;
         textures = getTextures(61);
+        break;
+    case 9:
+        card_amount = 5;
+        textures = getTextures(7);
         break;
 }
 

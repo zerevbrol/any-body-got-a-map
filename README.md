@@ -1,6 +1,6 @@
 # any body got a map? [📍](https://staff.washington.edu/bryantl2)
 
-A final, exploratory project by noted homosexual L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
+A final, exploratory project by L.P. Bryant for Ben Lee (LIS598: Computing Cultural Heritage WI25).
 
 <i>any body got a map?</i> takes the form of a zine, replicating a tried-and-true medium of homosexual communication, viewable as [an online interactive](https://staff.washington.edu/bryantl2) (recommended), and as an accessible, static file.
 
@@ -18,15 +18,23 @@ The <i>Address Books</i>, for fear of censorship and self-protection, do not men
 
 ### scope & rationale
 
-Given the scope of this project as compared to its source, only the fully "cleaned and verified" datasets published for the 1988 Damron Guides are used here as proof of concept. The 1988 dataset, despite being cleaned and verified, does not have its full dataset represented by the Mapping the Gay Guides project website, however.
+Given the scope of this project as compared to its source, only the fully "cleaned and verified" datasets published for the 1988 Damron Guides are used here as proof of concept. The 1988 dataset, despite being cleaned and verified, does not have its full dataset represented by the Mapping the Gay Guides project website, however. <i>any body got a map?</i> identifies and leverages this gap between "usable" but not "presentable" data.
+
+The datasets compiled for Mapping the Gay Guides contain geocoded locations suitable for GIS or similar mapping software, in line with the visualization deliverable published by the project. <i>any body got a map?</i> manipulates, permutes, and conforms this data into different visualizations in line with data subsets or slices indicated in methodology below.
 
 ### methodology
 
-The 1988 dataset was 
+The 1988 dataset was processed using a combination of spreadsheet software (Sheets, Excel) as well as the pandas and numpys libraries in python.
+
+Data slices and subsequent subsets were externalized then mapped, visualized, or otherwise charted using [Datawrapper](https://www.datawrapper.de/) and [QGIS](https://qgis.org/).
+
+All additional data is cited per visualization and includes information from [Queering the Map](https://www.queeringthemap.com/) and United States Bureau of Labor Statistics.
+
+This information was then compiled, processed, and interpreted into zine format using alienmelon's Electric Zine Maker, and hosted at University of Washington servers.
 
 ### thank you & further reading
 
-You can find the sources consulted for this project in the bibliography.
+You can find the sources consulted for this project indicated as endnotes here.
 
 A big, delicious thank you to the folks at [Electric Zine Maker](https://alienmelon.itch.io/electric-zine-maker) on itch.io.
 

@@ -38,7 +38,7 @@ Data slices and subsequent subsets were externalized then mapped, visualized, or
 
 All additional data is cited per visualization and includes information from [Queering the Map](https://www.queeringthemap.com/) and United States Bureau of Labor Statistics.
 
-This information was then compiled, processed, and interpreted into zine format using alienmelon's Electric Zine Maker, and hosted at University of Washington servers.
+This information was then compiled, processed, and interpreted into zine format using alienmelon's Electric Zine Maker, and hosted at University of Washington servers via aesop.
 
 ***
 
